@@ -1,0 +1,44 @@
+.btn_div {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+}
+.user-item__image {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+.form-control {
+  display: flex;
+
+  flex: 4;
+}
+.flex_left {
+  flex: 2;
+}
+
+.flex_right {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+
+  align-items: center;
+  flex: 2;
+}
+.cart_btn {
+  position: relative;
+}
+.cart_quantity {
+  position: absolute;
+  color: #fff;
+  top: -8px;
+  right: -8px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: brown;
+}

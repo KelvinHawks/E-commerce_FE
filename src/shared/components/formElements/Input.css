@@ -1,0 +1,10 @@
+.form-control input:focus {
+  outline: none;
+}
+.form-control input {
+  width: 350px;
+  padding: 9px 13px;
+  border-radius: 4rem;
+  border: none;
+  background-color: #ddd;
+}
