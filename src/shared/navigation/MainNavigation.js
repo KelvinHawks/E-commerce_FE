@@ -5,11 +5,23 @@ import Button from "../../shared/components/formElements/Button";
 import "./MainNavigation.css";
 import Avatar from "../UIelements/Avatar";
 function MainNavigation() {
+  const clearSearchHandler = () => {
+    console.log("cleared");
+  };
   return (
     <MainHeader>
       <div className="flex_left"></div>
       <div className="form-control">
-        <Input element="input" type="text" placeholder="Search items" />
+        <div class="search-container">
+          <Input element="input" type="text" placeholder="Search..." />
+          <button className="search_btn" type="submit">
+            <i className="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button className="onClear" onClick={clearSearchHandler}>
+            <i className="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p className="prefered_search">Consumer Electronics</p>
       </div>
       <div className="flex_right">
         <div className="btn_div">
