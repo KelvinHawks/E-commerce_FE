@@ -1,0 +1,16 @@
+.products_container {
+  flex-grow: 1;
+}
+.products-nav_container {
+  padding: 23px;
+  justify-content: space-between;
+  display: flex;
+}
+.div_left {
+  display: flex;
+  gap: 23px;
+}
+.div_right {
+  display: flex;
+  gap: 23px;
+}

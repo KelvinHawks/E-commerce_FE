@@ -12,7 +12,7 @@ function MainNavigation() {
     <MainHeader>
       <div className="flex_left"></div>
       <div className="form-control">
-        <div class="search-container">
+        <div className="search-container">
           <Input element="input" type="text" placeholder="Search..." />
           <button className="search_btn" type="submit">
             <i className="fa-solid fa-magnifying-glass"></i>
