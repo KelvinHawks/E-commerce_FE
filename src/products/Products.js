@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Products.css";
 import Button from "../shared/components/formElements/Button";
+import Card from "../shared/UIelements/Card";
 function Products() {
   // const [firstOption, setFirstOption] = useState("Useless First");
   const firstOptions = ["Useless First", "Option 2", "Option 3", "Option 4"];
@@ -57,6 +58,9 @@ function Products() {
             <i className="fa-brands fa-windows"></i>
           </Button>
         </div>
+      </div>
+      <div className="card_div">
+        <Card />
       </div>
     </div>
   );
