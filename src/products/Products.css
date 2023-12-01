@@ -18,4 +18,9 @@
 }
 .card_div {
   margin: 23px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  align-items: center;
+  justify-content: center;
 }

@@ -16,6 +16,44 @@ function Products() {
   ];
   const [options, setOptions] = useState([]);
 
+  const data = [
+    {
+      image: ".././images/pexels-pixabay-280250.jpg",
+      description: "New watch in market",
+      price: 23,
+      small: "It contains silver coting",
+      rating: 3.0,
+    },
+    {
+      image: ".././images/pexels-pixabay-280250.jpg",
+      description: "New watch in market",
+      price: 23,
+      small: "It contains silver coting",
+      rating: 3.1,
+    },
+    {
+      image: ".././images/pexels-pixabay-280250.jpg",
+      description: "New watch in market",
+      price: 28,
+      small: "It contains silver coting",
+      rating: 3.4,
+    },
+    {
+      image: ".././images/pexels-pixabay-280250.jpg",
+      description: "New watch in market",
+      price: 29,
+      small: "It contains silver coting",
+      rating: 3.7,
+    },
+    {
+      image: ".././images/pexels-pixabay-280250.jpg",
+      description: "New watch in market",
+      price: 24,
+      small: "It contains silver coting",
+      rating: 3.3,
+    },
+  ];
+
   const handleSelectedOptions = (e) => {
     const target = e.target.value;
     setOptions(target);
@@ -60,7 +98,17 @@ function Products() {
         </div>
       </div>
       <div className="card_div">
-        <Card />
+        {data.map((item) => {
+          return (
+            <Card
+              image={item.image}
+              description={item.description}
+              small={item.small}
+              price={item.price}
+              rating={item.rating}
+            />
+          );
+        })}
       </div>
     </div>
   );
