@@ -58,7 +58,7 @@ function Products() {
     const target = e.target.value;
     setOptions(target);
   };
-  console.log(options);
+
   return (
     <div className="products_container">
       <div className="products-nav_container">
@@ -101,6 +101,7 @@ function Products() {
         {data.map((item) => {
           return (
             <Card
+              key={Math.random()}
               image={item.image}
               description={item.description}
               small={item.small}
