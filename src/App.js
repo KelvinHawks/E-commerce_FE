@@ -9,10 +9,10 @@ function App() {
   const [query, setQuery] = useState();
   const [selectedCategory, setSelectedCategory] = useState();
   const recommendedHandler = (e) => {
-    setQuery(e.target.value);
+    setSelectedCategory(e.target.value);
   };
   const handleInputChange = (e) => {
-    setSelectedCategory(e.target.value);
+    setQuery(e.target.value);
   };
   console.log(query);
   console.log(selectedCategory);

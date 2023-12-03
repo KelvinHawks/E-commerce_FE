@@ -8,9 +8,10 @@ function Input(props) {
         id={props.id}
         type={props.type}
         placeholder={props.placeholder}
+        onChange={props.onChange}
       />
     ) : (
-      <input type="radio" id={props.id} />
+      <input type="radio" id={props.id} onChange={props.onChange} />
     );
   return <div className="form-control">{element}</div>;
 }
