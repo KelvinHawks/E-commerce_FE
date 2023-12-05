@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Products.css";
 import Button from "../shared/components/formElements/Button";
-import Card from "../shared/UIelements/Card";
-function Products() {
+//import Card from "../shared/UIelements/Card";
+function Products({ result }) {
   // const [firstOption, setFirstOption] = useState("Useless First");
   const firstOptions = ["Useless First", "Option 2", "Option 3", "Option 4"];
   // const [secondOption, setSecondOption] = useState("Conditions");
@@ -15,44 +15,6 @@ function Products() {
     "Option 4",
   ];
   const [options, setOptions] = useState([]);
-
-  const data = [
-    {
-      image: ".././images/pexels-pixabay-280250.jpg",
-      description: "New watch in market",
-      price: 23,
-      small: "It contains silver coting",
-      rating: 3.0,
-    },
-    {
-      image: ".././images/pexels-pixabay-280250.jpg",
-      description: "New watch in market",
-      price: 23,
-      small: "It contains silver coting",
-      rating: 3.1,
-    },
-    {
-      image: ".././images/pexels-pixabay-280250.jpg",
-      description: "New watch in market",
-      price: 28,
-      small: "It contains silver coting",
-      rating: 3.4,
-    },
-    {
-      image: ".././images/pexels-pixabay-280250.jpg",
-      description: "New watch in market",
-      price: 29,
-      small: "It contains silver coting",
-      rating: 3.7,
-    },
-    {
-      image: ".././images/pexels-pixabay-280250.jpg",
-      description: "New watch in market",
-      price: 24,
-      small: "It contains silver coting",
-      rating: 3.3,
-    },
-  ];
 
   const handleSelectedOptions = (e) => {
     const target = e.target.value;
@@ -98,7 +60,8 @@ function Products() {
         </div>
       </div>
       <div className="card_div">
-        {data.map((item) => {
+        {result}
+        {/* {data.map((item) => {
           return (
             <Card
               key={Math.random()}
@@ -109,7 +72,7 @@ function Products() {
               rating={item.rating}
             />
           );
-        })}
+        })} */}
       </div>
     </div>
   );

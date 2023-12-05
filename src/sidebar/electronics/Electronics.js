@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Electronics.css";
-const Filter = () => {
+const Filter = ({ recommendedHandler }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleFilter = () => {
@@ -24,13 +24,21 @@ const Filter = () => {
           {/* Your filter options/content here */}
 
           <select>
-            <option value="option1">Cell Phones and SmartPhones</option>
-            <option value="option2">Option 2</option>
+            <option value="electronics" onClick={recommendedHandler}>
+              Cell Phones and SmartPhones
+            </option>
+            <option value="option2" onClick={recommendedHandler}>
+              Option 2
+            </option>
           </select>
 
           <select>
-            <option value="option1">Computers</option>
-            <option value="option2">Option 2</option>
+            <option value="computers" onClick={recommendedHandler}>
+              Computers
+            </option>
+            <option value="option2" onClick={recommendedHandler}>
+              Option 2
+            </option>
           </select>
 
           {/* Add more filter elements as needed */}
