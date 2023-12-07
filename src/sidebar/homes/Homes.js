@@ -24,19 +24,19 @@ const Filter = ({ recommendedHandler }) => {
           {/* Your filter options/content here */}
 
           <select>
-            <option value="phones" onClick={recommendedHandler}>
+            <option value="electronics" onClick={recommendedHandler}>
               Cell Phones and SmartPhones
             </option>
-            <option value="option2" onClick={recommendedHandler}>
+            <option value="option 2" onClick={recommendedHandler}>
               Option 2
             </option>
           </select>
 
           <select>
-            <option value="computers" onClick={recommendedHandler}>
+            <option value="electronics" onClick={recommendedHandler}>
               Computers
             </option>
-            <option value="option2" onClick={recommendedHandler}>
+            <option value="option 2" onClick={recommendedHandler}>
               Option 2
             </option>
           </select>

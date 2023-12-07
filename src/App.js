@@ -13,6 +13,7 @@ function App() {
 
   const recommendedHandler = (e) => {
     setSelectedCategory(e.target.value);
+    console.log(e.target.value);
   };
 
   const handleInputChange = (e) => {
@@ -22,7 +23,6 @@ function App() {
   const filteredItems = Data.filter(
     (product) => product.name.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
-  console.log(filteredItems);
 
   function filteredData(Data) {
     let filteredProducts = Data;

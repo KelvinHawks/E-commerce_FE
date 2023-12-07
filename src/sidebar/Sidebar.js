@@ -7,7 +7,9 @@ import Electronics from "./electronics/Electronics";
 function Sidebar({ recommendedHandler }) {
   return (
     <div className="sidebar_container">
-      <button className="department_btn">Departments</button>
+      <button className="department_btn" value="" onClick={recommendedHandler}>
+        Departments
+      </button>
       <div className="categories">
         <Electronics recommendedHandler={recommendedHandler} />
         <Business recommendedHandler={recommendedHandler} />

@@ -3,7 +3,7 @@ import "./Recommended.css";
 function Recommended({ recommendedHandler }) {
   return (
     <div className="recommended_div">
-      <button onClick={recommendedHandler} value="clothes">
+      <button value="clothes" onClick={recommendedHandler}>
         <i className="fa-solid fa-vest-patches"></i>
         <p>Clothing and shoes</p>
       </button>
