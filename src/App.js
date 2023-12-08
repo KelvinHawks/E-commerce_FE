@@ -1,66 +1,32 @@
 import { useState } from "react";
 import "./App.css";
-import Products from "./products/Products";
-import Recommended from "./recommended/pages/Recommended";
-import MainNavigation from "./shared/navigation/MainNavigation";
-import Sidebar from "./sidebar/Sidebar";
-import Card from "./shared/UIelements/Card";
-import { Data } from "./data/Data";
+//<<<<<<< property_manager
+import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Category from "./properties/components/Category";
+import ItemDisplay from "./properties/components/ItemDisplay";
+import SharedLayout from "./properties/components/SharedLayout";
+import UploadHouse from "./properties/components/UploadHouse";
+import jsonData from './properties/sampleData/houses.json';
+import './App.css';
 
 function App() {
-  const [query, setQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState();
 
-  const recommendedHandler = (e) => {
-    setSelectedCategory(e.target.value);
-    console.log(e.target.value);
-  };
+    console.log(jsonData);
 
-  const handleInputChange = (e) => {
-    setQuery(e.target.value);
-  };
-
-  const filteredItems = Data.filter(
-    (product) => product.name.toLowerCase().indexOf(query.toLowerCase()) !== -1
-  );
-
-  function filteredData(Data) {
-    let filteredProducts = Data;
-
-    if (query) {
-      filteredProducts = filteredItems;
-    }
-    if (selectedCategory) {
-      filteredProducts = filteredProducts.filter(
-        ({ category }) =>
-          category.toLowerCase() === selectedCategory.toLowerCase()
-      );
-    }
-    return filteredProducts.map((item) => (
-      <Card
-        key={Math.random()}
-        image={item.image}
-        description={item.description}
-        small={item.small}
-        price={item.price}
-        rating={item.rating}
-      />
-    ));
-  }
-  const result = filteredData(Data, selectedCategory, query);
-  //console.log(query);
-  //console.log(selectedCategory);
   return (
-    <div className="App">
-      <main>
-        <MainNavigation handleInputChange={handleInputChange} />
-        <Recommended recommendedHandler={recommendedHandler} />
-      </main>
-      <div className="flex" style={{ display: "flex" }}>
-        <Sidebar recommendedHandler={recommendedHandler} />
-        <Products result={result} />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        
+        <Route path="/" element = { <Home />} />
+        <Route path="/property" element = { < SharedLayout /> } >
+          <Route path="/property/:category" element = { <Category /> } />
+          <Route path="/property/i/:ItemId" element = { <ItemDisplay data={jsonData} /> } />
+          <Route path="/property/upload" element = { <UploadHouse /> } />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
