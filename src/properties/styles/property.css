@@ -1,0 +1,78 @@
+.container {
+    justify-content: center;
+}
+
+
+.searchbar {
+    border-radius: 15px; 
+    width: 45%;
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+    padding-left: 2%;
+    background-color: rgb(219, 215, 215);
+    border: none;
+}
+
+.category-link {
+    border-radius: 12px;
+    background-color: rgb(158, 95, 95);
+    margin: 5px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+#card-icons {
+    font-size: small;
+}
+
+#card {
+    background-color: antiquewhite;
+    border: none;
+}
+#footer {
+    background-color: antiquewhite;
+}
+
+#category-nav {
+    background-color: rgb(223, 220, 220);
+    text-decoration: none;
+
+}
+
+#category-nav:hover {
+    text-decoration: none;
+    color: rgb(99, 197, 99);
+}
+.category-link:hover {
+    color: aqua;
+}
+
+.icon-name {
+    margin: 0;
+}
+.item-name {
+    margin-top: 2%;
+}
+#item-image {
+    margin-top: 3%;
+}
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin-left: 3%;
+}
+#tour-link {
+    margin-top: 1%;
+    font-size: x-large;
+}
+
+.icon {
+    margin-left: 2%;
+}
+.footer {
+    margin-top: 3%;
+}
+
