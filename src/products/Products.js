@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Products.css";
 import Button from "../shared/components/formElements/Button";
-import Card from "../shared/UIelements/Card";
-function Products() {
+//import Card from "../shared/UIelements/Card";
+function Products({ result }) {
   // const [firstOption, setFirstOption] = useState("Useless First");
   const firstOptions = ["Useless First", "Option 2", "Option 3", "Option 4"];
   // const [secondOption, setSecondOption] = useState("Conditions");
@@ -20,7 +20,7 @@ function Products() {
     const target = e.target.value;
     setOptions(target);
   };
-  console.log(options);
+
   return (
     <div className="products_container">
       <div className="products-nav_container">
@@ -60,7 +60,19 @@ function Products() {
         </div>
       </div>
       <div className="card_div">
-        <Card />
+        {result}
+        {/* {data.map((item) => {
+          return (
+            <Card
+              key={Math.random()}
+              image={item.image}
+              description={item.description}
+              small={item.small}
+              price={item.price}
+              rating={item.rating}
+            />
+          );
+        })} */}
       </div>
     </div>
   );

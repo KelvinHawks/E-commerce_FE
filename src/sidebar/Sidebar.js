@@ -4,14 +4,16 @@ import "./Sidebar.css";
 import Business from "./business/Business";
 import Homes from "./homes/Homes";
 import Electronics from "./electronics/Electronics";
-function Sidebar() {
+function Sidebar({ recommendedHandler }) {
   return (
     <div className="sidebar_container">
-      <button className="department_btn">Departments</button>
+      <button className="department_btn" value="" onClick={recommendedHandler}>
+        Departments
+      </button>
       <div className="categories">
-        <Electronics />
-        <Business />
-        <Homes />
+        <Electronics recommendedHandler={recommendedHandler} />
+        <Business recommendedHandler={recommendedHandler} />
+        <Homes recommendedHandler={recommendedHandler} />
       </div>
     </div>
   );

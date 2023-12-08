@@ -1,4 +1,6 @@
+import { useState } from "react";
 import "./App.css";
+//<<<<<<< property_manager
 import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Category from "./properties/components/Category";
@@ -24,6 +26,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+
   );
 }
 

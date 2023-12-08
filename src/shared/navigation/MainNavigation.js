@@ -4,7 +4,7 @@ import Input from "../components/formElements/Input";
 import Button from "../../shared/components/formElements/Button";
 import "./MainNavigation.css";
 import Avatar from "../UIelements/Avatar";
-function MainNavigation() {
+function MainNavigation({ handleInputChange }) {
   const clearSearchHandler = () => {
     console.log("cleared");
   };
@@ -13,7 +13,12 @@ function MainNavigation() {
       <div className="flex_left"></div>
       <div className="form-control">
         <div className="search-container">
-          <Input element="input" type="text" placeholder="Search..." />
+          <Input
+            element="input"
+            type="text"
+            placeholder="Search..."
+            onChange={handleInputChange}
+          />
           <button className="search_btn" type="submit">
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>
