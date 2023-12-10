@@ -1,11 +1,11 @@
 import { useState } from "react";
-import "./App.css";
-import Products from "./products/Products";
-import Recommended from "./recommended/pages/Recommended";
-import MainNavigation from "./shared/navigation/MainNavigation";
-import Sidebar from "./sidebar/Sidebar";
-import Card from "./shared/UIelements/Card";
-import { Data } from "./data/Data";
+import "../App.css";
+import Products from "../products/Products";
+import Recommended from "../recommended/pages/Recommended";
+import MainNavigation from "../shared/navigation/MainNavigation";
+import Sidebar from "../sidebar/Sidebar";
+import Card from "../shared/UIelements/Card";
+import { Data } from "../data/Data";
 
 function Home() {
   const [query, setQuery] = useState("");
