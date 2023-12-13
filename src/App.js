@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-//<<<<<<< property_manager
 import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Category from "./properties/components/Category";
@@ -13,19 +12,21 @@ import InventorySharedLayout from "./inventory_manager/components/InventoryShare
 import InventoryList from "./inventory_manager/components/InventoryList";
 import './App.css';
 
-function App() {
 
-    console.log(jsonData);
+function App() {
+  console.log(jsonData);
 
   return (
     <BrowserRouter>
       <Routes>
-        
-        <Route path="/" element = { <Home />} />
-        <Route path="/property" element = { < SharedLayout /> } >
-          <Route path="/property/:category" element = { <Category /> } />
-          <Route path="/property/i/:ItemId" element = { <ItemDisplay data={jsonData} /> } />
-          <Route path="/property/upload" element = { <UploadHouse /> } />
+        <Route path="/" element={<Home />} />
+        <Route path="/property" element={<SharedLayout />}>
+          <Route path="/property/:category" element={<Category />} />
+          <Route
+            path="/property/i/:ItemId"
+            element={<ItemDisplay data={jsonData} />}
+          />
+          <Route path="/property/upload" element={<UploadHouse />} />
         </Route>
         <Route path="/inventory"  element = { <InventorySharedLayout /> } >
           <Route path="/inventory/dashboard" element = { <Dashboard /> } />
@@ -33,7 +34,6 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-
   );
 }
 
