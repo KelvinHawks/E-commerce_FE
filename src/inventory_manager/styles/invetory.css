@@ -1,0 +1,37 @@
+#navlist {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+   /* width: 10%;*/
+    background-color: #f1f1f1;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+}
+
+.navlink {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    background-color: #555;
+    color: white;
+}
+
+.navlink.active {
+    background-color: #04AA6D;
+    color: white;
+}
+#dashboard {
+    padding: 50px;
+    margin: 50px;
+}
+#inventory_list {
+    text-align: center;
+}
+#filter {
+    margin: 1%;
+}
