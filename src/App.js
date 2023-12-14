@@ -1,4 +1,4 @@
-import { useState } from "react";
+//mport { useState } from "react";
 import "./App.css";
 //<<<<<<< property_manager
 import Home from "./pages/Home";
@@ -11,8 +11,6 @@ import jsonData from "./properties/sampleData/houses.json";
 import "./App.css";
 
 function App() {
-  console.log(jsonData);
-
   return (
     <BrowserRouter>
       <Routes>

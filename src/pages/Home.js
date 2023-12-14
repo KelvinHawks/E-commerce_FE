@@ -13,7 +13,6 @@ function Home() {
 
   const recommendedHandler = (e) => {
     setSelectedCategory(e.target.value);
-    console.log(e.target.value);
   };
 
   const handleInputChange = (e) => {
@@ -53,7 +52,12 @@ function Home() {
   return (
     <div className="App">
       <main>
-        <MainNavigation handleInputChange={handleInputChange} />
+        <MainNavigation
+          handleInputChange={handleInputChange}
+          query={query}
+          selectedCategory={selectedCategory}
+          setQuery={setQuery}
+        />
         <Recommended recommendedHandler={recommendedHandler} />
       </main>
       <div className="flex" style={{ display: "flex" }}>

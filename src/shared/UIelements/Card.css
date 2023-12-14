@@ -1,5 +1,5 @@
 .card_container {
-  width: 170px;
+  width: 190px;
   min-height: 200px;
   padding: 6px 24px;
   text-align: start;
@@ -41,13 +41,13 @@
   font-size: 14px;
 }
 .rating button {
-  width: 70px;
   border: 1px solid rgb(0, 98, 255);
   background-color: transparent;
   color: rgb(0, 94, 255);
   display: flex;
   gap: 9px;
+  font-size: 12px;
   align-items: center;
-  padding: 5px;
+  padding: 3px;
   border-radius: 3px;
 }
