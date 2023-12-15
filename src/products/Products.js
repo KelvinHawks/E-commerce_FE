@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import "./Products.css";
 import Button from "../shared/components/formElements/Button";
-//import Card from "../shared/UIelements/Card";
+
 function Products({ result }) {
-  // const [firstOption, setFirstOption] = useState("Useless First");
   const firstOptions = ["Useless First", "Option 2", "Option 3", "Option 4"];
-  // const [secondOption, setSecondOption] = useState("Conditions");
   const secondOptions = ["Conditions", "Option 2", "Option 3", "Option 4"];
-  // const [thirdOption, setThirdOption] = useState("Deliverly options");
   const thirdOptions = [
     "Deliverly options",
     "Option 2",
@@ -59,21 +56,7 @@ function Products({ result }) {
           </Button>
         </div>
       </div>
-      <div className="card_div">
-        {result}
-        {/* {data.map((item) => {
-          return (
-            <Card
-              key={Math.random()}
-              image={item.image}
-              description={item.description}
-              small={item.small}
-              price={item.price}
-              rating={item.rating}
-            />
-          );
-        })} */}
-      </div>
+      <div className="card_div">{result}</div>
     </div>
   );
 }
