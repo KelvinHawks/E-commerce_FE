@@ -8,7 +8,7 @@ function Sidebar({ recommendedHandler }) {
   return (
     <div className="sidebar_container">
       <button className="department_btn" value="" onClick={recommendedHandler}>
-        Departments
+        All
       </button>
       <div className="categories">
         <Electronics recommendedHandler={recommendedHandler} />

@@ -8,10 +8,12 @@
   height: 3rem;
   margin-right: 1rem;
 }
-.form-control {
+.form-control__input {
   display: flex;
+
   flex: 4;
   width: 100%;
+
   align-items: center;
 }
 .flex_left {
@@ -44,11 +46,15 @@
   flex-direction: column;
   background: brown;
 }
+.cart_quantity h4 {
+  font-size: 17px;
+}
 /* Basic styling for the search container */
 .search-container {
   position: relative;
   display: flex;
   /* Adjust width as needed */
+  flex: 2;
   border-radius: 33px;
   background-color: #ddd;
   padding: 8px 12px;
@@ -60,10 +66,10 @@
 .search-container input[type="text"] {
   background-color: transparent;
   margin-left: 20px;
-  flex: 1;
+
   border: none;
   outline: none;
-
+  width: 100%;
   font-size: 16px;
 }
 
@@ -95,4 +101,5 @@
   padding: 4px;
   font-size: 17px;
   letter-spacing: 1px;
+  flex: 1;
 }

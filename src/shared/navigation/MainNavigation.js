@@ -1,23 +1,29 @@
 import React from "react";
 import MainHeader from "./MainHeader";
-import Input from "../components/formElements/Input";
+//import Input from "../components/formElements/Input";
 import Button from "../../shared/components/formElements/Button";
 import "./MainNavigation.css";
 import Avatar from "../UIelements/Avatar";
-function MainNavigation({ handleInputChange }) {
+function MainNavigation({
+  handleInputChange,
+  query,
+  selectedCategory,
+  setQuery,
+}) {
   const clearSearchHandler = () => {
-    console.log("cleared");
+    setQuery("");
   };
   return (
     <MainHeader>
       <div className="flex_left"></div>
-      <div className="form-control">
+      <div className="form-control__input">
         <div className="search-container">
-          <Input
+          <input
             element="input"
             type="text"
             placeholder="Search..."
             onChange={handleInputChange}
+            value={query}
           />
           <button className="search_btn" type="submit">
             <i className="fa-solid fa-magnifying-glass"></i>
@@ -26,7 +32,9 @@ function MainNavigation({ handleInputChange }) {
             <i className="fa-solid fa-xmark"></i>
           </button>
         </div>
-        <p className="prefered_search">Consumer Electronics</p>
+        <p className="prefered_search">
+          {query || selectedCategory ? query || selectedCategory : "All"}
+        </p>
       </div>
       <div className="flex_right">
         <div className="btn_div">

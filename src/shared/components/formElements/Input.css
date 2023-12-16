@@ -3,7 +3,7 @@
 }
 .form-control input {
   width: 350px;
-
+  background: blue;
   border: none;
   background-color: #ddd;
 }
