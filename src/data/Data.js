@@ -1,5 +1,6 @@
 export const Data = [
   {
+    id: 1,
     name: "watch",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",
@@ -9,6 +10,7 @@ export const Data = [
     category: "electronics",
   },
   {
+    id: 2,
     name: "phone",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",
@@ -18,6 +20,7 @@ export const Data = [
     category: "option 2",
   },
   {
+    id: 3,
     name: "watch",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",
@@ -27,6 +30,7 @@ export const Data = [
     category: "Option 2",
   },
   {
+    id: 4,
     name: "phone",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",
@@ -36,6 +40,7 @@ export const Data = [
     category: "entertainment",
   },
   {
+    id: 5,
     name: "watch",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",

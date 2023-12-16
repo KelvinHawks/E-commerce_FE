@@ -8,6 +8,7 @@ import ItemDisplay from "./properties/components/ItemDisplay";
 import SharedLayout from "./properties/components/SharedLayout";
 import UploadHouse from "./properties/components/UploadHouse";
 import jsonData from "./properties/sampleData/houses.json";
+
 import "./App.css";
 
 function App() {
