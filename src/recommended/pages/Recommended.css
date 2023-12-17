@@ -6,7 +6,13 @@
   padding: 23px;
 }
 .recommended_div button {
-  background-color: transparent;
+  background-color: #eeeeee;
+  padding: 12px;
+  width: 120px;
+  display: grid;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
   border: none;
   color: #565656;
 }

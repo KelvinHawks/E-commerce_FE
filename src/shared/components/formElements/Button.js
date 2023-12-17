@@ -10,7 +10,9 @@ function Button(props) {
   }
   return (
     <div className={`button ${props.className}`}>
-      <button>{props.children}</button>
+      <button value={props.value} onClick={props.onClickHandler}>
+        {props.children}
+      </button>
     </div>
   );
 }
