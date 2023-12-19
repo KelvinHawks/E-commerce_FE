@@ -11,16 +11,16 @@ import jsonData from "./properties/sampleData/houses.json";
 
 import "./App.css";
 import SingleItem from "./products/components/SingleItem";
-import MainNavigation from "./shared/navigation/MainNavigation";
+//import MainNavigation from "./shared/navigation/MainNavigation";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<MainNavigation />}>
-          <Route path="/home/item/:id" element={<SingleItem />} />
-        </Route>
+        {/* <Route path="/home" element={<MainNavigation />}> */}
+        <Route path="/home/item/:Pid" element={<SingleItem />} />
+        {/* </Route> */}
         <Route path="/property" element={<SharedLayout />}>
           <Route path="/property/:category" element={<Category />} />
           <Route

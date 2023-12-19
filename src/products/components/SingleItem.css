@@ -1,4 +1,18 @@
-.item__container {
-  margin-top: 23%;
-  background-color: blue;
+.item_container {
+  margin-top: 70px;
+}
+
+.item_header {
+  text-align: center;
+}
+.item__container-content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px;
+
+  display: flex;
+}
+.item_description {
+  text-align: center;
+  margin: 0 0 0 50px;
 }
