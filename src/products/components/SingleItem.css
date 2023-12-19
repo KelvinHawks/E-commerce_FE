@@ -14,5 +14,17 @@
 }
 .item_description {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   margin: 0 0 0 50px;
+}
+.item_description button {
+  background: rgb(28, 118, 229);
+  color: #fff;
+  border: none;
+  padding: 5px;
+  border-radius: 8px;
+  width: 150px;
 }

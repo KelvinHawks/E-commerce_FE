@@ -57,7 +57,7 @@ function SingleItem() {
                          )}
                     </ul> */}
           <button>
-            <b>Contact Owner</b>
+            <b>Checkout</b>
           </button>
         </div>
       </div>
