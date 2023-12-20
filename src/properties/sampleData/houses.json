@@ -1076,7 +1076,8 @@
     "parking": 1,
     "size": "600 sqft",
     "imageUrl": "https://cdn.pixabay.com/photo/2017/02/24/12/22/apartment-2094700_640.jpg",
-    "category": "apartment"
+    "category": "apartment",
+    "isfavourite": true
   },
   {
     "id": 45,
@@ -1115,7 +1116,8 @@
     "parking": 1,
     "size": "1200 sqft",
     "imageUrl": "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
-    "category": "house"
+    "category": "house",
+    "isfavourite": true
   },
   {
     "id": 48,
@@ -1128,7 +1130,8 @@
     "parking": 2,
     "size": "2000 sqft",
     "imageUrl": "https://cdn.pixabay.com/photo/2016/09/22/11/55/kitchen-1687121_640.jpg",
-    "category": "house"
+    "category": "house",
+    "isfavourite": true
   },
   {
     "id": 49,
@@ -1141,7 +1144,8 @@
     "parking": 1,
     "size": "800 sqft",
     "imageUrl": "https://cdn.pixabay.com/photo/2018/01/26/08/15/dining-room-3108037_640.jpg",
-    "category": "apartment"
+    "category": "apartment",
+    "isfavourite": true
   },
   {
     "id": 50,
@@ -1154,7 +1158,8 @@
     "parking": 4,
     "size": "7000 sqft",
     "imageUrl": "https://cdn.pixabay.com/photo/2015/07/10/15/13/building-839362_640.jpg",
-    "category": "house"
+    "category": "house",
+    "isfavourite": true
   },
     {
     "id": 51,
@@ -1167,7 +1172,8 @@
     "parking": 2,
     "size": "2500 sqft",
     "imageUrl": "https://cdn.pixabay.com/photo/2018/08/15/20/53/bathtub-3609070_640.jpg",
-    "category": "house"
+    "category": "house",
+    "isfavourite": true
   },
   {
     "id": 52,
@@ -1180,7 +1186,8 @@
     "parking": 3,
     "size": "5000 sqft",
     "imageUrl": "https://cdn.pixabay.com/photo/2019/05/15/19/17/street-4205751_640.jpg",
-    "category": "house"
+    "category": "house",
+    "isfavourite": true
   },
   {
     "id": 53,
@@ -1193,7 +1200,8 @@
     "parking": 0,
     "size": "1200 sqft",
     "imageUrl": "https://cdn.pixabay.com/photo/2016/11/22/23/38/apartment-1851201_640.jpg",
-    "category": "cottage"
+    "category": "cottage",
+    "isfavourite": true
   },
   {
     "id": 54,
@@ -1206,7 +1214,8 @@
     "parking": 1,
     "size": "600 sqft",
     "imageUrl": "https://cdn.pixabay.com/photo/2016/07/26/18/30/kitchen-1543493_640.jpg",
-    "category": "apartment"
+    "category": "apartment",
+    "isfavourite": true
   },
   {
     "id": 55,
@@ -1219,7 +1228,8 @@
     "parking": 2,
     "size": "1800 sqft",
     "imageUrl": "https://cdn.pixabay.com/photo/2013/11/13/21/14/san-francisco-210230_640.jpg",
-    "category": "cottage"
+    "category": "cottage",
+    "isfavourite": true
   },
   {
     "id": 56,
@@ -1349,7 +1359,8 @@
     "parking": 2,
     "size": "1800 sqft",
     "imageUrl": "https://cdn.pixabay.com/photo/2023/01/10/20/56/nyc-7710506_640.jpg",
-    "category": "cottage"
+    "category": "cottage",
+    "isfavourite": true
   },
     {
     "id": 66,

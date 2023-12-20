@@ -1,0 +1,45 @@
+[
+  {
+    "id":1,
+    "participants": [
+      {
+        "sender":{
+          "name":"Alice",
+          "messages":[
+            {
+              "id":1,
+              "content":"Hi bob"
+            },
+            {
+              "id":2,
+              "content":"hOW ARE YOU"
+            },
+            {
+              "id":3,
+              "content":"Good. I got the messeage. I'll be coming over the weekend"
+            }
+          ]
+        }
+      },
+      {
+        "sender":{
+          "name":"Bob",
+          "messages":[
+            {
+              "id":1,
+              "content":"Hi too alice"
+            },
+            {
+              "id":2,
+              "content":"Im fine, how is the going"
+            },
+            {
+              "id":3,
+              "content":"Nice,I can't wait to see "
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

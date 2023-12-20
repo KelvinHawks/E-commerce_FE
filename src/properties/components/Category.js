@@ -1,19 +1,46 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useParams, Link } from "react-router-dom";
 import { Card, Row, Col } from "react-bootstrap";
-import jsonData from '../sampleData/houses.json';
 import '../styles/property.css'
+import { DataContext } from "./PropertyManager";
+import jsonData from '../sampleData/houses.json'
+import { type } from "@testing-library/user-event/dist/type";
 
 const Category = () => {
 
+    const  filteredProperties   = useContext(DataContext);
+
+    const filteredPropertiesArray = Object.values(filteredProperties);
+   
     //extract category from url
     const { category } = useParams();
     const [start, setStart] = useState(0);
     const [end, setEnd] = useState(12);
+    const [filteredHouses, setFilteredHouses] = useState([]);
     
     var categoryName = category || "house";
     //filter houses based on category name
-    const filteredHouses = jsonData.filter((item) => item.category === categoryName);
+    
+
+    //TEST
+    
+
+    useEffect(() => {
+        if (filteredPropertiesArray.length === jsonData.length){
+            const totalFilteredHouses = jsonData.filter((item) => item.category === categoryName);
+            if (JSON.stringify(totalFilteredHouses) !== JSON.stringify(filteredHouses)) {
+                setFilteredHouses(totalFilteredHouses)
+            };
+            
+        } else {
+            if (JSON.stringify(filteredPropertiesArray) !== JSON.stringify(filteredHouses)) {
+                setFilteredHouses(filteredPropertiesArray)
+            };
+        }
+        console.log(filteredPropertiesArray.length === jsonData.length)
+    }, [category, categoryName, filteredPropertiesArray]);
+
+
 
     const totalHouses = filteredHouses.length;
 
@@ -22,7 +49,7 @@ const Category = () => {
         setEnd(12);
     }, [category]);
 
-    if (totalHouses == 0) {
+    if (totalHouses === 0) {
         return(
             <div>
                 <h5>No houses found</h5>
@@ -46,7 +73,7 @@ const Category = () => {
     }
 
     const maxReached = end >= totalHouses;
-    const minReached = start == 0;
+    const minReached = start === 0;
 
    return (
      <>
@@ -55,7 +82,7 @@ const Category = () => {
                 <Col key={index}>
                     <Link to={`/property/i/${house.id}`} className="category-link" >
                         <Card id="card">
-                            <Card.Img variant="top" src={house.imageUrl} alt={house.name} style={{width: '355px', height: '180px'}} />
+                            <Card.Img variant="top" src={house.imageUrl} alt={house.name} style={{width: '316px', height: '180px'}} />
                             
                             <Card.Text>
                                 <p id="card_price" >&nbsp;&nbsp;<b>{house.price}</b></p>

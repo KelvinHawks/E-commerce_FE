@@ -38,7 +38,7 @@ const CategoryNavbar = ({category}) => {
             <Navbar style={{ display:'inline' }} >
                 <Nav style={{ display:'inline' }}>
                         <Nav.Link className="category-link" id="category-nav">
-                            <Link to={`/property/${category.toLowerCase()}`}
+                            <Link to={`/property/p/${category.toLowerCase()}`}
                             style={linkStyle}
                             onMouseEnter={handleHover}
                             onMouseLeave={handleHoverOut}
