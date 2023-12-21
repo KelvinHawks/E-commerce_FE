@@ -1,18 +1,18 @@
 import React from "react";
-//import { Data } from "../../data/Data";
+import { Data } from "../../data/Data";
 import "./SingleItem.css";
-//import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 function SingleItem() {
-  //const itemId = useParams().Pid;
+  const itemId = useParams().Pid;
 
-  //const filteredData = Data.find((item) => item.id === parseInt(itemId));
+  const filteredData = Data.find((item) => item.id === parseInt(itemId));
 
   // console.log(filteredData);
   return (
     <div className="item_container">
       <div className="item_header">
         <h3>
-          <b>Watch</b>
+          <b>{filteredData.name}</b>
         </h3>
       </div>
       {/* <div className="d-flex" >
@@ -25,7 +25,7 @@ function SingleItem() {
       <div className="item__container-content" id="item-image">
         <div className="content_div">
           <img
-            src="../../images/pexels-pixabay-280250.jpg"
+            src={`../${filteredData.image}`}
             alt="item"
             className="img-fluid"
             width="800px"
@@ -40,22 +40,17 @@ function SingleItem() {
           <h4>
             <b>Description</b>
           </h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+          <p>{filteredData.description}</p>
           <h5>
             <b>Price</b>
           </h5>
           <p>
-            <b>23.00</b>
+            <b>{`Ksh ${filteredData.price}.00`}</b>
           </p>
           <h5>
             <b>Features</b>
           </h5>
-          {/* <ul>
-                        {features.map((feature) => (
-                            <li>{feature}</li>
-                        )
-                         )}
-                    </ul> */}
+          <p>{filteredData.small}</p>
           <button>
             <b>Checkout</b>
           </button>
