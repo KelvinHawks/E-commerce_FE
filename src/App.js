@@ -8,7 +8,7 @@ import ItemDisplay from "./properties/components/ItemDisplay";
 import SharedLayout from "./properties/components/SharedLayout";
 import UploadHouse from "./properties/components/UploadHouse";
 import jsonData from "./properties/sampleData/houses.json";
-
+import Auth from "./auth/Auth";
 import "./App.css";
 import SingleItem from "./products/components/SingleItem";
 //import MainNavigation from "./shared/navigation/MainNavigation";
@@ -20,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/home" element={<MainNavigation />}> */}
         <Route path="/home/item/:Pid" element={<SingleItem />} />
+        <Route path="/auth" element={<Auth />} />
         {/* </Route> */}
         <Route path="/property" element={<SharedLayout />}>
           <Route path="/property/:category" element={<Category />} />

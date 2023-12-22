@@ -4,6 +4,7 @@ import MainHeader from "./MainHeader";
 import Button from "../../shared/components/formElements/Button";
 import "./MainNavigation.css";
 import Avatar from "../UIelements/Avatar";
+import { Link } from "react-router-dom";
 function MainNavigation({
   handleInputChange,
   query,
@@ -38,7 +39,10 @@ function MainNavigation({
       </div>
       <div className="flex_right">
         <div className="btn_div">
-          <Button>Sign In</Button>
+          <Link to="/auth">
+            <Button>Sign In</Button>
+          </Link>
+
           <div className="cart_btn">
             <Button>My Cart</Button>
             <div className="cart_quantity">

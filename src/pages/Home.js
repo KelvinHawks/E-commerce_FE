@@ -7,6 +7,7 @@ import MainNavigation from "../shared/navigation/MainNavigation";
 import Sidebar from "../sidebar/Sidebar";
 import Card from "../shared/UIelements/Card";
 import { Data } from "../data/Data";
+//import Auth from "../auth/Auth";
 //import SingleItem from "../products/components/SingleItem";
 
 function Home() {
