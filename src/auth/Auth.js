@@ -66,7 +66,6 @@ function Auth() {
           {isSignUpMode ? "Sign Up" : "Login"}
         </button>
       </form>
-      <div id="signInDiv"></div>
     </div>
   );
 }
