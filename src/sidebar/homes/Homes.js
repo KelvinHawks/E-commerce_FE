@@ -21,8 +21,6 @@ const Filter = ({ recommendedHandler }) => {
       </button>
       {isExpanded && (
         <div className="filter-options">
-          {/* Your filter options/content here */}
-
           <select>
             <option value="electronics" onClick={recommendedHandler}>
               Cell Phones and SmartPhones
@@ -40,8 +38,6 @@ const Filter = ({ recommendedHandler }) => {
               Option 2
             </option>
           </select>
-
-          {/* Add more filter elements as needed */}
         </div>
       )}
     </div>

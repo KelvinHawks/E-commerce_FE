@@ -5,31 +5,31 @@ function Recommended({ recommendedHandler }) {
     <div className="recommended_div">
       <button value="clothes" onClick={recommendedHandler}>
         <i className="fa-solid fa-vest-patches"></i>
-        <p>Clothing and shoes</p>
+        Clothing and shoes
       </button>
       <button onClick={recommendedHandler} value="entertainment">
         <i className="fa-solid fa-film"></i>
-        <p>Entertainment</p>
+        Entertainment
       </button>
       <button onClick={recommendedHandler} value="music">
         <i className="fa-solid fa-music"></i>
-        <p>Music</p>
+        Music
       </button>
       <button onClick={recommendedHandler} value="pets">
         <i className="fa-solid fa-shield-cat"></i>
-        <p>Pets</p>
+        Pets
       </button>
       <button onClick={recommendedHandler} value="sport">
         <i className="fa-solid fa-vest-patches"></i>
-        <p>Sport and Lifestyle</p>
+        Sport and Lifestyle
       </button>
       <button onClick={recommendedHandler} value="kitchen">
         <i className="fa-solid fa-kitchen-set"></i>
-        <p>Kitchen Accessories</p>
+        Kitchen Accessories
       </button>
       <button onClick={recommendedHandler} value="travel">
         <i className="fa-solid fa-road-bridge"></i>
-        <p>Travel Equipments</p>
+        Travel Equipments
       </button>
     </div>
   );
