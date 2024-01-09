@@ -38,13 +38,13 @@ function Home() {
           category.toLowerCase() === selectedCategory.toLowerCase()
       );
     }
-    if (!filteredProducts) {
-      return (
-        <div>
-          <h1>No Item Found. Please try another category</h1>
-        </div>
-      );
-    }
+    // if (!filteredProducts) {
+    //   return (
+    //     <div>
+    //       <h1>No Item Found. Please try another category</h1>
+    //     </div>
+    //   );
+    // }
     return filteredProducts.map((item) => (
       <Card
         key={Math.random()}
