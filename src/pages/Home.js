@@ -47,6 +47,7 @@ function Home() {
     // }
     return filteredProducts.map((item) => (
       <Card
+        item={item}
         key={Math.random()}
         id={item.id}
         image={item.image}

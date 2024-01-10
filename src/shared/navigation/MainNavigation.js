@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MainHeader from "./MainHeader";
 //import Input from "../components/formElements/Input";
 import Button from "../../shared/components/formElements/Button";
@@ -14,6 +14,11 @@ function MainNavigation({
   const clearSearchHandler = () => {
     setQuery("");
   };
+  const [profileModal, setProfileModal] = useState(true);
+  const setProfileHandler = () => {
+    setProfileModal((prev) => !prev);
+  };
+
   return (
     <MainHeader>
       <div className="flex_left"></div>
@@ -44,14 +49,27 @@ function MainNavigation({
           </Link>
 
           <div className="cart_btn">
-            <Button>My Cart</Button>
+            <Link to="/cart">
+              <Button>My Cart</Button>
+            </Link>
+
             <div className="cart_quantity">
               <h4>5</h4>
             </div>
           </div>
         </div>
         <div className="user-item__image">
-          <Avatar image="../../images/lion (2).jpg" />
+          <Avatar
+            image="../../images/lion (2).jpg"
+            setProfileHandler={setProfileHandler}
+          />
+
+          {profileModal && (
+            <div className="profile">
+              <p>Profile</p>
+              <p>Logout</p>
+            </div>
+          )}
         </div>
       </div>
     </MainHeader>

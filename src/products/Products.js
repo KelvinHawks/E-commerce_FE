@@ -12,7 +12,6 @@ function Products({ result, recommendedHandler }) {
     "Option 4",
   ];
   const [options, setOptions] = useState([]);
-  console.log(result);
 
   const handleSelectedOptions = (e) => {
     const target = e.target.value;
