@@ -12,18 +12,19 @@ import Auth from "./auth/Auth";
 import "./App.css";
 import SingleItem from "./products/components/SingleItem";
 import Cart from "./cart/pages/Cart";
-//import MainNavigation from "./shared/navigation/MainNavigation";
+import MainNavigation from "./shared/navigation/MainNavigation";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/home" element={<MainNavigation />}> */}
-        <Route path="/home/item/:Pid" element={<SingleItem />} />
+        <Route path="/home" element={<MainNavigation />}>
+          <Route path="/home/item/:Pid" element={<SingleItem />} />
+          <Route path="/home/cart" element={<Cart />} />
+        </Route>
         <Route path="/auth" element={<Auth />} />
-        <Route path="/cart" element={<Cart />} />
-        {/* </Route> */}
+
         <Route path="/property" element={<SharedLayout />}>
           <Route path="/property/:category" element={<Category />} />
           <Route
