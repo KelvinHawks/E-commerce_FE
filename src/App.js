@@ -22,8 +22,8 @@ function App() {
         <Route path="/home" element={<MainNavigation />}>
           <Route path="/home/item/:Pid" element={<SingleItem />} />
           <Route path="/home/cart" element={<Cart />} />
+          <Route path="/home/auth" element={<Auth />} />
         </Route>
-        <Route path="/auth" element={<Auth />} />
 
         <Route path="/property" element={<SharedLayout />}>
           <Route path="/property/:category" element={<Category />} />

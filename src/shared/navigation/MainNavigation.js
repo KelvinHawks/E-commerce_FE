@@ -46,7 +46,7 @@ function MainNavigation({
         </div>
         <div className="flex_right">
           <div className="btn_div">
-            <Link to="/auth">
+            <Link to="/home/auth">
               <Button>Sign In</Button>
             </Link>
 
