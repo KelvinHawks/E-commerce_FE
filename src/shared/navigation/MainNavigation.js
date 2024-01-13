@@ -6,6 +6,7 @@ import "./MainNavigation.css";
 import Avatar from "../UIelements/Avatar";
 import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { useCart } from "react-use-cart";
 function MainNavigation({
   handleInputChange,
   query,
@@ -20,6 +21,16 @@ function MainNavigation({
     setProfileModal((prev) => !prev);
   };
 
+  const {
+    items,
+    isEmpty,
+    totalItems,
+    totalUniqueItems,
+    cartTotal,
+    updateItemQuantity,
+    removeItem,
+    emptyCart,
+  } = useCart();
   return (
     <>
       <MainHeader>
@@ -45,6 +56,12 @@ function MainNavigation({
           </p>
         </div>
         <div className="flex_right">
+          <div className="home-btn">
+            <Link to="/">
+              <i class="fa-solid fa-house"></i>
+            </Link>
+          </div>
+
           <div className="btn_div">
             <Link to="/home/auth">
               <Button>Sign In</Button>
@@ -56,7 +73,7 @@ function MainNavigation({
               </Link>
 
               <div className="cart_quantity">
-                <h4>5</h4>
+                <h4>{totalItems}</h4>
               </div>
             </div>
           </div>

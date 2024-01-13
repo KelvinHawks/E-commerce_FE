@@ -11,7 +11,7 @@ export const Data = [
   },
   {
     id: 2,
-    name: "phone",
+    name: "Desktop",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",
     price: 23,
@@ -21,7 +21,7 @@ export const Data = [
   },
   {
     id: 3,
-    name: "watch",
+    name: "Bulb",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",
     price: 28,
@@ -31,7 +31,7 @@ export const Data = [
   },
   {
     id: 4,
-    name: "phone",
+    name: "Microphone",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",
     price: 29,
@@ -41,7 +41,7 @@ export const Data = [
   },
   {
     id: 5,
-    name: "watch",
+    name: "Laptop",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",
     price: 24,
@@ -50,8 +50,8 @@ export const Data = [
     category: "clothes",
   },
   {
-    id: 4,
-    name: "phone",
+    id: 6,
+    name: "Woofer",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",
     price: 29,
@@ -60,8 +60,8 @@ export const Data = [
     category: "entertainment",
   },
   {
-    id: 4,
-    name: "phone",
+    id: 7,
+    name: "Speaker",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",
     price: 29,
@@ -70,8 +70,8 @@ export const Data = [
     category: "entertainment",
   },
   {
-    id: 4,
-    name: "phone",
+    id: 8,
+    name: "calculator",
     image: ".././images/pexels-pixabay-280250.jpg",
     description: "New watch in market",
     price: 29,

@@ -117,3 +117,7 @@
   background-color: #ddd;
   transition: 1s;
 }
+.home-btn .fa-solid {
+  font-size: 23px;
+  color: rgb(85, 85, 255);
+}
