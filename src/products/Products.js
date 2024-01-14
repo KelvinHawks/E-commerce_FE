@@ -60,7 +60,13 @@ function Products({ result, recommendedHandler }) {
           </Button>
         </div>
       </div>
-      <div className="card_div">{result}</div>
+      <div className="card_div">
+        {result.length === 0 ? (
+          <h1>No result, please try another option</h1>
+        ) : (
+          result
+        )}
+      </div>
     </div>
   );
 }

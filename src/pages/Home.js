@@ -3,10 +3,11 @@ import "../App.css";
 import Products from "../products/Products";
 import Recommended from "../recommended/pages/Recommended";
 import MainNavigation from "../shared/navigation/MainNavigation";
-//import { Route, Routes } from "react-router-dom";
+
 import Sidebar from "../sidebar/Sidebar";
 import Card from "../shared/UIelements/Card";
 import { Data } from "../data/Data";
+
 //import Auth from "../auth/Auth";
 //import SingleItem from "../products/components/SingleItem";
 
@@ -38,15 +39,10 @@ function Home() {
           category.toLowerCase() === selectedCategory.toLowerCase()
       );
     }
-    if (!filteredProducts) {
-      return (
-        <div>
-          <h1>No Item Found. Please try another category</h1>
-        </div>
-      );
-    }
+
     return filteredProducts.map((item) => (
       <Card
+        item={item}
         key={Math.random()}
         id={item.id}
         image={item.image}
